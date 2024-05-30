@@ -5,7 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Home html </h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+    <input type="file" name="file" id="file">
+    <input type="submit" name="submit">
+
+    </form>
 
 </body>
 </html>
