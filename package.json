@@ -1,0 +1,17 @@
+{
+  "name": "dataanalysisdjango",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwind build analytic/src/tw.css -o analytic/static/analytic/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.13.0",
+    "tailwindcss": "^3.4.3"
+  }
+}

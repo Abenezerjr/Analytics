@@ -28,7 +28,9 @@ def home(request):
                 emi=d['emi']
                 tax=d['tax']
                 exp=d['other_exp']
-                dt=Data(name=name,price=price,rent=rent,emi=emi,tax=tax,exp=exp)
+                expenses_monthly=exp+tax+emi
+                income_monthly=rent-expenses_monthly
+                dt=Data(name=name,price=price,rent=rent,emi=emi,tax=tax,exp=exp,expenses_monthly=expenses_monthly,income_monthly=income_monthly)
                 dt.save()
 
 

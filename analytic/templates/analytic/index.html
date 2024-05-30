@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'analytic/styles.css' %}">
 </head>
 <body>
 
@@ -12,8 +14,12 @@
     <input type="submit" name="submit">
 
     </form>
-{% for i in datas %}
-      {{ i }}
+{% for object in datas %}
+    <ul>
+       <li>
+      {{ object }}---{{ object.price }}-----{{ object.rent }}----{{ object.emi }}----{{ object.exp }}-----{{ object.expenses_monthly }} ==== {{ object.income_monthly }}
+           </li>
+    </ul>
 {% endfor %}
 
 </body>
